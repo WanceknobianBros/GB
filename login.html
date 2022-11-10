@@ -9,8 +9,55 @@
       <meta name="keywords" content="HTML, CSS, JavaScript">
       <meta name="author" content="Ian Jaspers">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="/login.js"></script> 
-      <style src="/login.css"></style>
+      <script>
+      var confirmPassword = "w@nce_2015";
+      let i;
+      var youShallPass = true;
+      var attempted = false;
+      function checkPswd() {
+         var password = document.getElementById("pswd").value;
+         if (password == confirmPassword) {
+            if (!youShallPass){
+               document.getElementById("ha").innerText = "HAHA, NO U CANT DO DAT BOI YOU ALREDE GOT IT WROONG";
+               throw new Error("Quit trying to hack into my highly sophisticated website, you can't do it.")
+            }
+            window.location = "https://greasybanana.w3spaces.com/-rfew22a6ub35hgwx5tg-ee88ferv28p58zhfqb48vru-4cmf9rjss-xu63q9cyhunr253kzcwygz7p4c27wzurdmq6ta986tn2-rav-9tn.html"
+         } else {
+            document.getElementById("pswd").style = "border-color : red;";
+            document.getElementById("pt").style = "color : red;";
+            document.getElementById("cont").style = "background-color : red;";
+            youShallPass = false;
+         }
+      }
+      </script> 
+      <style>*{background-color: #faf3c0;}#pswd{border-radius: 25px; height: 30px; text-align: center; background-color: #faf3c0; color: #bd903c;}#pt{color: #f2d600; font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;}#cont{align-items: center; background-color: #cca42b; border: 0; border-radius: 100px; box-sizing: border-box; color: #fdfae5; cursor: pointer; display: inline-flex; font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; justify-content: center; line-height: 20px; max-width: 480px; min-height: 40px; min-width: 0px; overflow: hidden; padding: 0px; padding-left: 20px; padding-right: 20px; text-align: center; transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s; user-select: none; -webkit-user-select: none; vertical-align: middle;}#cont:hover,#cont:focus{color: #fdfae5;}#cont:disabled{cursor: not-allowed; background: rgba(0, 0, 0, 0.08); color: rgba(0, 0, 0, 0.3);}.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  position: absolute;
+  bottom:  0%;
+  width: 100%;
+  border-top: 1px solid #e6c60d;
+  height: 50px;
+}
+
+a {
+  border: 1px solid #bd903c;
+  border-radius: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+  color: #bd903e;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #faf3c0;
+  background-color: #bd903c;
+}</style>
    </head>
    <body>
       <div class="login_form">
