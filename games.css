@@ -1,0 +1,115 @@
+*{
+  background-color: #faf3c0;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.fullScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#ta {
+  border-radius: 25px;
+  height: 30px;
+  text-align: center;
+  color: #bd903c;
+}
+
+#cont {
+  align-items: center;
+  background-color: #cca42b;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #fdfae5;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 37px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+#fixed {
+  align-items: center;
+  background-color: #cca42b;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #fdfae5;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  top: 0%;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 37px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+#cont:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  position: absolute;
+  bottom:  0%;
+  width: 100%;
+  border-top: 1px solid #e6c60d;
+  height: 50px;
+}
+
+a {
+  border: 1px solid #bd903c;
+  border-radius: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+  color: #bd903e;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #faf3c0;
+  background-color: #bd903c;
+}
+iframe {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+iframe::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
